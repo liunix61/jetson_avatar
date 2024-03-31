@@ -12,10 +12,10 @@ class Audio2FaceClass(threading.Thread):
     def __init__(self, sample_rate=44100, callback=None, **kwargs):
         super(Audio2FaceClass, self).__init__()
         self.callback = callback
-        self.a2f_url = '10.1.199.191:50051' # The audio2face url by default
+        self.a2f_url = 'IP_ADDRESS:50051' # The audio2face url by default
         self.a2f_avatar_instance = '/World/audio2face/PlayerStreaming' # The instance name of the avatar in a2f
         self.sample_rate = 44100
-        self.server = 'http://10.1.199.191:8011'
+        self.server = 'http://IP_ADDRESS:8011'
         self.usd_scene = 'C:/Users/admin/AppData/Local/ov/pkg/audio2face-2022.2.1/exts/omni.audio2face.wizard/assets/demo_fullface_streaming.usda'
         self.a2f_instance = self.A2F()   
          
